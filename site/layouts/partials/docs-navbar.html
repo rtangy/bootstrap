@@ -29,6 +29,11 @@
 
   <ul class="navbar-nav ml-md-auto">
     <li class="nav-item">
+      <button class="bd-toggle-dark-mode btn btn-link nav-link p-2" type="button" aria-label="Toggle Dark mode">
+        {{ partial "icons/lightning.svg" (dict "class" "navbar-nav-svg" "title" "Toggle Dark mode" "width" "36" "height" "36") }}
+      </button>
+    </li>
+    <li class="nav-item">
       <a class="nav-link p-2" href="{{ .Site.Params.repo }}" target="_blank" rel="noopener" aria-label="GitHub">
         {{ partial "icons/github.svg" (dict "class" "navbar-nav-svg" "width" "36" "height" "36") }}
       </a>
